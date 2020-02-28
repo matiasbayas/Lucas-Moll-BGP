@@ -148,7 +148,7 @@ def updateDist(gamma, alpha, xgrid, deltax, I, rho, theta, k, eta, alpha0, xi, m
 def KGAT(rho, theta, k, eta, alpha0, xi, xmin, xmax, I, maxit = 20, maxit_g = 100, maxit_v = 100,
          tol = 1e-7, tol_v = 1e-7, tol_g = 1e-7):
 
-    xgrid = rc.agrid(xmax, I, xmin)
+    xgrid = agrid(xmax, I, xmin)
 
     deltax = np.zeros(I)
     for i in range(1,I):
