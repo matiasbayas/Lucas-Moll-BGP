@@ -6,6 +6,7 @@
 import growthmethods as gm
 import numpy as np
 import matplotlib.pyplot as plt
+
 # Final Tail Parameter:
 theta1 = 0.7
 # Initial Tail Parameter:
@@ -38,4 +39,8 @@ for t in range (1,T):
     thetas[t] = theta1 + rhos*(thetas[t-1]-theta1)
 
 plt.plot(thetas)
+plt.show()
+
+plt.plot(xgrid1, sigma1)
+plt.plot(xgrid0, sigma0)
 plt.show()
