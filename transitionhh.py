@@ -6,7 +6,9 @@
 import growthmethods as gm
 
 # Final Tail Parameter:
-theta = 0.7
+theta1 = 0.7
+# Initial Tail Parameter:
+theta0 = 0.5
 
 # Other Parameters:
 rho = 0.06
@@ -19,3 +21,10 @@ xi = 0.4
 I = 2001
 xmin = 0
 xmax = 3
+
+# Compute value function and distribution at the final and initial ss
+v1, sigma1, alpha1, f1, F1, gamma1, xgrid1, it1 = def KGAT(rho, theta1, k, eta, alpha0, xi, xmin, xmax, I)
+v0, sigma0, alpha0, f0, F0, gamma0, xgrid0, it0 = def KGAT(rho, theta0, k, eta, alpha0, xi, xmin, xmax, I)
+
+
+# Process for tail parameter during the transition:
